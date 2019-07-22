@@ -1,0 +1,15 @@
+<repositories>
+		<repository>
+			<id>codelds</id>
+			<url>https://code.lds.org/nexuc/content/groups/main-repo</url>
+		</repository>
+	</repositories>
+
+--------------------------------------------------------
+<!-- oracle JDBC -->
+		<!-- https://mvnrepository.com/artifact/com.oracle/ojdbc6 -->
+		<dependency>
+			<groupId>com.oracle</groupId>
+			<artifactId>ojdbc6</artifactId>
+			<version>11.1.0.7.0</version>
+		</dependency>
