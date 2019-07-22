@@ -1,0 +1,13 @@
+
+BoardServlet.java - 요청을 받아서 요청에 해당하는 Model과 View를 호출하는 역할을 한다
+
+ActionFactory.java - 커맨드패턴으로 작업 처리를 위한 명령 처리 클래스가 있어야 한다
+
+BoardDAO getInstance - DAO객체를 리턴한다
+list<BoardVO> selectALLBoards - 최근 등록한 게시글이 먼저 나오도록 게시글 목록을 출력한다
+void insertBoard(BoardVO bVo) - 전달인자로 받은 VO 객체를 board 테이블에 삽입한다.
+void updateReadCount(String num) - 게시글 상세 보기할 때마다 글 번호를 증가시킨다.
+BoardVO selectOneBoardByNum(String num) - board 테이블에서 게시글 번호로 해당 게시글을 찾아 게시글 정보를 BoardVO 객체로 얻어준다.
+void updateBoard(BoardVO bVo)- 매개 변수로 받은 VO 객체 내의 코드로 board 테이블에서 검색해서 VO 객체에 저장된 정보로 게시글 정보를 수정한다.
+BoardVO checkPassWord(String pass, String num) - board 테이블에서 게시글 번호와 비밀번호가 일치하는 게시글을 찾아 BoardVO 객체로 리턴한다.
+void deleteBoard(String num) - 게시글 번호에 해당되는 게시글 정보를 삭제한다.
